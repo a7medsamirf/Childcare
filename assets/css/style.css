@@ -1,0 +1,807 @@
+/*
+Template Name: Childcare | Personal Portfolio HTML5 Template
+Author: Ahmed Samir
+Author URI: https://www.facebook.com/a7med.samir.f
+Description: MartaUP | Personal Portfolio HTML5 Template
+Version: 1.0
+Tags: bootstrap, clean, creative, cv, freelancer, gallery, html5, one page, personal, portfolio, responsive, resume, simple, vcard
+*/
+
+/*
+Style Index
+==================================================
+    1. Basic Setup
+    2. Navigation Bar
+    3. Header Section
+    4. Together Section
+    5. Children Section
+    6. Campaign Section
+    7. Team Section
+    8. Testimonials Section
+    9. Blog Section
+    10. Make a Donation Section
+    11. Footer Section
+    12. Blog Page Section
+    13. Media Query Section
+*/
+
+/* Main Css Rules  for Main Elements in The project */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*--------------------------------------------------
+[1. Start Basic Setup ]
+--------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #797979;
+    text-decoration: none;
+    text-underline-position: above
+}
+
+a:hover {
+    color: #f4627c;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+h1,
+h3 {
+    color: #0F3553;
+    font-weight: bold;
+}
+
+.h5,
+h5 {
+    font-size: 2rem;
+}
+
+p {
+    color: #707070
+}
+
+.heading {
+    position: relative;
+}
+
+.btn-primary.custom-file-control:before,
+.btn.btn-primary {
+    color: #fff;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#f4627c), color-stop(#eb5285), color-stop(#dd4590), color-stop(#cc3d9c), to(#b539a8));
+    background-image: linear-gradient(to right top, #f4627c, #eb5285, #dd4590, #cc3d9c, #b539a8);
+    border-color: #f4627c;
+}
+
+.btn-primary a {
+    color: #fff
+}
+
+.custom-file-control,
+.form-control,
+.is-focused .custom-file-control,
+.is-focused .form-control {
+    background-image: linear-gradient(0deg, #f4627c 2px, rgba(0, 150, 136, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0);
+}
+
+/*--------------------------------------------------
+[2. Start Navigation Bar ]
+--------------------------------------------------*/
+
+.fixed-top.scrolled {
+    background-color: #fff !important;
+    -webkit-transition: background-color 700ms ease-in-out;
+    transition: background-color 700ms ease-in-out;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    z-index: 999;
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0, 0) !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.header-section {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.header-section.navbar-fixed-top {
+    position: fixed;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.header-section.navbar-fixed-top .top-header {
+    display: none;
+}
+
+.top-header {
+    padding: 7px 0;
+}
+
+.top-header .mail-call .mail-to,
+.top-header .mail-call .call-on {
+    display: inline-block;
+    color: #000;
+}
+
+.top-header i {
+    height: auto;
+    width: 18px;
+}
+
+.top-header .follow_us_on li {
+    display: inline-block;
+}
+
+.top-header .follow_us_on li a i::before {
+    font-size: 14px;
+    color: #000;
+}
+
+.top-header .mail-call {
+    text-align: right;
+}
+
+.top-header .mail-call i::before {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #f4627c
+}
+
+.top-header .mail-call .mail-to,
+.top-header .mail-call .call-on,
+.top-header .mail-call .shopping {
+    display: inline-block;
+    color: #797979;
+}
+
+.separator-pipesign {
+    width: 1px;
+    height: 15px;
+    margin: -2px 12px;
+    display: inline-block;
+    background: #797979;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #FB3B64;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #FB3B64;
+
+}
+
+.navbar-light .navbar-toggler {
+    color: #797979;
+    border-color: #FB3B64;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #FB3B64;
+}
+
+.nav-item a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: relative;
+    top: 30px;
+    background: #FB3B64;
+    margin-top: 5px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.nav-item a:hover::before {
+    width: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.8rem;
+    padding-left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #797979
+}
+
+.navbar-brand,
+.navbar .navbar-brand {
+    color: #f4627c;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar-brand:hover {
+    color: #f4627c
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #797979;
+}
+
+/*--------------------------------------------------
+[3. Start Header Section ]
+--------------------------------------------------*/
+
+.header {
+    position: relative;
+    height: 100vh;
+}
+
+.header .content {
+    padding-top: 25vh;
+}
+
+.header .content p {
+
+    color: #4D4D4D;
+}
+
+/*--------------------------------------------------
+[4. Start Together Section]
+--------------------------------------------------*/
+
+#together {
+    position: relative;
+    padding: 100px 0;
+    color: #fff;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#f4627c), color-stop(#eb5285), color-stop(#dd4590), color-stop(#cc3d9c), to(#b539a8));
+    background-image: linear-gradient(to right top, #f4627c, #eb5285, #dd4590, #cc3d9c, #b539a8);
+}
+
+#together .heading h1,
+#together .heading p {
+    color: #fff;
+}
+
+#together .icon-abs .icon {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background: #fff;
+    color: #f4627c;
+    display: inline;
+    font-size: 20px;
+    padding: 22px 28px;
+    border-radius: 50%;
+    -webkit-transform: translateX(50%) translateY(-50%);
+    transform: translateX(50%) translateY(-50%);
+}
+
+#together .pulse {
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.685);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.685);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.685);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.685);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/*--------------------------------------------------
+[5. Start Children Section]
+--------------------------------------------------*/
+
+#children {
+    position: relative;
+    padding: 100px 0;
+    background-color: #fff
+}
+
+#children .children-service {
+    padding-top: 100px;
+}
+
+#children .children-service .children-box {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#children .children-service .children-box .heading {
+    padding: 25px 10px;
+}
+
+#children h5 {
+    color: #707070
+}
+
+/*--------------------------------------------------
+[6. Start Campaign Section]
+--------------------------------------------------*/
+
+#campaign {
+    padding: 100px 0;
+    position: relative;
+}
+
+#campaign .heading {
+    position: relative;
+}
+
+#campaign .heading h5 {
+    color: #707070
+}
+
+#campaign .line {
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background: #ec5c81;
+    top: 20px;
+    left: 160px;
+}
+
+#campaign .heading h1 {
+    color: #0F3553;
+    font-weight: bold;
+}
+
+#campaign .media {
+    position: relative;
+}
+
+#campaign .nav-pills .progress-value {
+    position: absolute;
+    -webkit-transform: translateX(85%) translateY(50%);
+    transform: translateX(85%) translateY(50%);
+    top: 0;
+    padding-top: 15px;
+    font-size: 30px;
+    color: #0F3553;
+    text-align: center;
+}
+
+#campaign .nav-pills .nav-link.active {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#f4627c), color-stop(#eb5285), color-stop(#dd4590), color-stop(#cc3d9c), to(#b539a8));
+    background-image: linear-gradient(to right top, #f4627c, #eb5285, #dd4590, #cc3d9c, #b539a8);
+    color: #fff;
+}
+
+#campaign .nav-pills .nav-link {
+    padding: 1.3em .8575em;
+}
+
+#campaign .nav-pills .nav-link.active .progress-value {
+    color: #fff
+}
+
+#campaign .tab-content .progress-value {
+    position: absolute;
+    -webkit-transform: translateX(80%) translateY(50%);
+    transform: translateX(80%) translateY(50%);
+    top: 0;
+    padding-top: 16px;
+    font-size: 30px;
+    color: #0F3553;
+    text-align: center;
+}
+
+/*--------------------------------------------------
+[7. Start Team Section ]
+--------------------------------------------------*/
+
+#team {
+    position: relative;
+    padding: 100px 0;
+}
+
+#team .heading h5 {
+    color: #707070;
+}
+
+#team .heading .line {
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background: #ec5c81;
+    top: 20px;
+    left: 100px;
+}
+
+/*--------------------------------------------------
+[8. Start Testimonials Section ]
+--------------------------------------------------*/
+
+#people-say {
+    padding: 100px 0;
+    background: url(../images/people-say-bg.png) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#people-say h1 {
+    color: #fff
+}
+
+#people-say p {
+    color: #fff
+}
+
+#people-say .testimonial .testimonial-content {
+    padding: 35px 25px 35px 50px;
+    margin-bottom: 35px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#people-say .testimonial .testimonial-content:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: 22px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#people-say .testimonial-content .testimonial-icon {
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 42px;
+    position: absolute;
+    top: 37px;
+    left: -15px;
+}
+
+#people-say .testimonial-content .testimonial-icon img {
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+#people-say .testimonial .description {
+    font-size: 15px;
+    color: #8a8a8a;
+    line-height: 23px;
+    margin: 0;
+}
+
+#people-say .testimonial .title {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+
+#people-say .testimonial h3 {
+    color: #fff
+}
+
+#people-say .testimonial .post {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+}
+
+#people-say .owl-theme .owl-controls {
+    margin-top: 20px;
+}
+
+#people-say .owl-theme .owl-controls .owl-page span {
+    background: #ccc;
+    opacity: 1;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+#people-say .owl-theme .owl-controls .owl-page.active span,
+#people-say .owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #ec5c81;
+}
+
+/*--------------------------------------------------
+[9. Start Blog Section ]
+--------------------------------------------------*/
+
+#blog {
+    position: relative;
+    padding: 100px 0;
+}
+
+#blog .heading h5 {
+    color: #707070;
+}
+
+#blog .line {
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background: #ec5c81;
+    top: 20px;
+    left: 90px;
+}
+
+#blog .post {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#blog .post-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 0;
+    color: #0F3553;
+}
+
+#blog .post-title a {
+    display: inline-block;
+    color: #0F3553;
+}
+
+#blog .post-content {
+    background: #fff;
+    padding: 20px;
+}
+
+#blog li {
+    display: inline-block;
+    color: #fff
+}
+
+#blog .post-content .fa-share-alt {
+    color: #ec5c81;
+    font-size: 20px;
+}
+
+#blog .time,
+#blog .category {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#f4627c), color-stop(#eb5285), color-stop(#dd4590), color-stop(#cc3d9c), to(#b539a8));
+    background-image: linear-gradient(to right top, #f4627c, #eb5285, #dd4590, #cc3d9c, #b539a8);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#blog .time a,
+#blog .category a {
+    color: #fff
+}
+
+/*--------------------------------------------------
+[10. Start Make a Donation Section ]
+--------------------------------------------------*/
+
+#donation {
+    position: relative;
+    padding: 70px 0;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#f4627c), color-stop(#eb5285), color-stop(#dd4590), color-stop(#cc3d9c), to(#b539a8));
+    background-image: linear-gradient(to right top, #f4627c, #eb5285, #dd4590, #cc3d9c, #b539a8);
+    color: #fff
+}
+
+#donation h1 {
+    color: #fff;
+}
+
+/*--------------------------------------------------
+[11. Start Footer Section ]
+--------------------------------------------------*/
+
+#footer {
+    padding-top: 100px;
+    background-color: #fff;
+    color: #fff;
+    background-image: url(../images/footer/footer-bg.png);
+    background-size: cover;
+    color: #4a4a4a
+}
+
+#footer .about-us .logo-footer a {
+    color: #ec5c81;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#footer .site-pages a {
+    color: #4a4a4a;
+    padding: 5px;
+}
+
+#footer .about-us a {
+
+    color: #fff;
+}
+
+#footer .location h5 {
+    font-size: 1rem;
+}
+
+#footer .location h4 {
+    font-size: 1.2rem;
+}
+
+#footer .location i {
+    color: #ec5c81
+}
+
+#footer .Instagram-feed img {
+    width: 100%;
+    padding: 5px;
+}
+
+#footer .footer-copyright .social-media li a {
+    color: #4a4a4a;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#footer .footer-copyright .social-media li a:hover {
+    background-color: #f4627c;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/*--------------------------------------------------
+[12. Start Blog Page Section]
+--------------------------------------------------*/
+
+#blog-page,
+#single-post {
+    position: relative;
+    padding: 25vh 0;
+}
+
+#blog-page .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#f4627c), color-stop(#eb5285), color-stop(#dd4590), color-stop(#cc3d9c), to(#b539a8));
+    background-image: linear-gradient(to right top, #f4627c, #eb5285, #dd4590, #cc3d9c, #b539a8);
+    background-color: #f4627c;
+    border-color: #f4627c;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#blog-page .card .card-header,
+#single-post .card .card-header {
+    color: #0F3553;
+    font-weight: bold;
+}
+#blog-page .card .card-header li span,
+#single-post .card .card-header li span{
+
+    float: right;
+}
+
+.widget-social i {
+    width: 40px;
+    height: 40px;
+    line-height: 2.1;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    margin: 5px;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#f4627c), color-stop(#eb5285), color-stop(#dd4590), color-stop(#cc3d9c), to(#b539a8));
+    background-image: linear-gradient(to right top, #f4627c, #eb5285, #dd4590, #cc3d9c, #b539a8);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.widget-social i:hover {
+    outline: 0;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+}
+
+/*--------------------------------------------------
+[13. Start Media Query Section]
+--------------------------------------------------*/
+
+@media only screen and (max-width: 990px) {
+
+    .top-header .mail-call {
+        text-align: center
+    }
+
+    .header .content {
+        padding-top: 10vh;
+    }
+
+    #together h1 {
+        font-size: 2rem;
+    }
+
+    #together .icon-abs .icon {
+        -webkit-transform: translateX(50%) translateY(0%);
+        transform: translateX(50%) translateY(0%);
+        top: 30%;
+    }
+
+    #children {
+        padding-bottom: 50px
+    }
+
+    #campaign {
+        padding: 50px 0
+    }
+
+    #team {
+        padding: 50px 0
+    }
+}
