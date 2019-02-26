@@ -2,7 +2,7 @@
 ## Depends on  Bootstrap Library
 This Template For Freelancers To Define Themselves And Display Their Works.
 
-Review : [Childcare Demo](https://a7medsamirf.github.io/Childcare/)
+Review : [Childcare Demo](https://a7medsamirf.github.io/Childcare-t/)
 
 ## Content:
 1. CSS Foder
@@ -46,7 +46,7 @@ Review : [Childcare Demo](https://a7medsamirf.github.io/Childcare/)
 
 ### License
 
-[MIT](https://github.com/a7medsamirf/Childcare/blob/master/LICENSE).
+[MIT](https://github.com/a7medsamirf/Childcare-t/blob/master/LICENSE).
 
 ### Support or Contact
  Copyright (c) 2018 Ahmed samir  ahmed.samir.farid@gmail.com github.com/a7medsamirf
