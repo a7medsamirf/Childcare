@@ -778,6 +778,10 @@ p {
     .top-header .mail-call {
         text-align: center
     }
+    .separator-pipesign
+    {
+        margin: -2px 1px;
+    }
 
     .header .content {
         padding-top: 10vh;
